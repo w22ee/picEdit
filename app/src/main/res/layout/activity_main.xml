@@ -1,0 +1,72 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/parent_layout"
+    tools:context=".MainActivity">
+    <ImageView
+        android:id="@+id/pic_inside"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:scaleType="fitStart"
+        android:layout_alignParentTop="true"
+        android:background="@color/material_blue_grey_800"
+         />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+"
+        android:id="@+id/add_button"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/buttom_btn_layout"/>
+
+    <RelativeLayout
+       android:layout_above="@+id/buttom_layout"
+        android:id="@+id/buttom_btn_layout"
+        android:layout_alignParentBottom="true"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tag_tab_button"
+            android:text="tag"
+            android:layout_centerInParent="true"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/comfirm_edit_button"
+            android:text="ok"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone"
+        android:gravity="center_vertical"
+        android:id="@+id/buttom_layout">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="确定"
+            android:id="@+id/ok_button"
+            android:layout_alignParentRight="true"
+
+             />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/ok_button"
+            android:layout_alignBottom="@+id/ok_button"
+             />
+    </RelativeLayout>
+
+
+</RelativeLayout>

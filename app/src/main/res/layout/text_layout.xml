@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.administrator.picedit.MoveFreeView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content" android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:id="@+id/text_layout"
+    android:gravity="center"
+    android:alpha="50"
+    android:background="#ffff11">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:background="@mipmap/ic_launcher" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:singleLine="true"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="这鞋漂亮"
+        android:id="@+id/textView" />
+</com.example.administrator.picedit.MoveFreeView>
