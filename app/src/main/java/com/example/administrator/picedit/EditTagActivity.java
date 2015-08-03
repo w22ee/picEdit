@@ -2,6 +2,7 @@ package com.example.administrator.picedit;
 
 import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Point;
@@ -69,6 +70,15 @@ public class EditTagActivity extends Activity implements OnClickReCall {
         comfrimButton = (Button) findViewById(R.id.ok_button);
         buttomBtnLayout = (RelativeLayout) findViewById(R.id.buttom_btn_layout);
         inputManager = (InputMethodManager) editText.getContext().getSystemService(Context.INPUT_METHOD_SERVICE);
+        Button button = (Button) findViewById(R.id.tag_tab_button);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent();
+                intent.setClass(EditTagActivity.this,TagPicActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 
     private void setLocation() {
